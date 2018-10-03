@@ -14,7 +14,6 @@
         
     2. complex / reference ==> objects
 
-
 */
 
 
@@ -83,12 +82,12 @@ var found = true;
 
 */
 
-// ES5
+// in ES5
+
 // function Person(name, age) {
 //     this.name = name;
 //     this.age = age;
 // }
-
 
 // Person.prototype.sayName = function () {
 //     console.log('im ' + this.name);
@@ -97,7 +96,7 @@ var found = true;
 //     console.log('im ' + this.age + " old");
 // }
 
-// ES6 ==> ( New OO syntax with class )
+// in ES6 ==> ( New OO syntax with class )
 
 class Person {
     constructor(name, age) {
@@ -115,7 +114,6 @@ class Person {
 
 //var p1 = new Person('Nag', 35);
 
-
 class Employee extends Person {
     constructor(name, age, salary) {
         super(name, age);
@@ -131,7 +129,6 @@ class Employee extends Person {
 }
 
 //var emp = new Employee('Nag', 35, 1000.00)
-
 
 class Boss extends Employee {
     askForRaise() {
@@ -149,13 +146,9 @@ class Abc {
 }
 Abc.staVar = 12;
 
-
-
-
 //-----------------------------------------------------------------
 // Literal style objects
 //-----------------------------------------------------------------
-
 
 // 1. Object
 
@@ -176,6 +169,7 @@ var newConfig = {
     }
 };
 
+//-----------------------------------------------------------------
 
 // 2. Array / List
 
@@ -186,6 +180,7 @@ arr.push('poha');
 // or
 var newArr = ['item1', 'item2'];
 
+//-----------------------------------------------------------------
 
 // 3. Regular Expression
 
@@ -195,6 +190,7 @@ var re = new RegExp('\\d{10}');
 
 var newRe = /\d{10}/;
 
+//-----------------------------------------------------------------
 
 // 4. Function
 
@@ -203,8 +199,6 @@ var add = new Function("n1", "n2", "var result=n1+n2;return result;")
 function newAdd(n1, n2) {
     var result = n1 + n2; return result
 }
-
-
 
 //------------------------------------------------------------
 

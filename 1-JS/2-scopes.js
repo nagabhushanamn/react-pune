@@ -5,7 +5,6 @@
 
     scope / execution-context
     ---------------------------
-
     
     memory/stack-frame with given arg & local variables
     to execute instructions in seq
@@ -23,10 +22,10 @@
 
     imp-note:
 
-    by default, every .js-runtime has 1 global-context/scope
+    => by default, every .js-runtime has 1 global-context/scope
 
-    every function invocation also creates new-scope which is child of
-    in which scope that function has declared/created
+    => every function invocation also creates new-scope which is child of
+       in which scope that function has declared/created
 
 
 */
@@ -36,7 +35,6 @@
 // console.log(v);
 // var v = 12;
 //---------------------------------------------------------
-
 
 // var v = 12;
 // function f1() {
@@ -78,7 +76,7 @@
 
 /*
 
-    probblems with 'var' keyword
+    Problems with 'var' keyword
 
     => always get hoist
     => we can re-declare same variable within scope
@@ -118,15 +116,18 @@ const trainer = {
 // trainer = null;// Error
 trainer.name = "Nag N";
 
+//---------------------------------------------------------
 
 // summary :
 
 // use 'let' for mutable reference
 // use 'const' for immutable reference
-// avoid 'var' keyword
+// avoid 'var' keyword ( deprecated )
 
 
 //---------------------------------------------------------
+
+//Ques
 
 let person = {
     name: 'Nag',
@@ -134,22 +135,23 @@ let person = {
 };
 
 // Object.defineProperty(person, 'name', { writable: false })
-Object.freeze(person)
+// Object.freeze(person)
 
-// person.age = 0;
+// person.age = 0; // Error
 
 //---------------------------------------------------------
 
 
 // Quiz
 
+// function getFood() {
+//     return{
+//         name: "Biryani"
+//     }
+// }
 
-function getFood() {
-    return{
-        name: "Biryani"
-    }
-}
 
+// let food = getFood();
+// console.log(food.name);
 
-let food = getFood();
-console.log(food.name);
+//-----------------------------------------------------------------
