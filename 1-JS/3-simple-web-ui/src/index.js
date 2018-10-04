@@ -26,7 +26,7 @@ document.querySelector('.btn-success')
 
 // Timer API
 
-const timeBadge = document.querySelector('.badge');
+const timeBadge = document.querySelector('.badge-danger');
 
 setInterval(() => {
     let now = new Date().toLocaleTimeString();

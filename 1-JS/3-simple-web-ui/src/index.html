@@ -14,8 +14,32 @@
     <h1>simple-web-ui</h1>
     <hr />
 
+
+    <div id="myBox1" class="alert alert-warning">
+        <input id="inp1" type="number" onchange="handleChange()" />
+        <hr />
+        <span class="badge badge-primary">0</span>
+    </div>
+
+
+    <script>
+        let inp1 = document.getElementById('inp1');
+        let num = 0;
+        setInterval(e => {
+            num++;
+            inp1.value = num;
+            inp1.dispatchEvent(new Event('change'))
+        }, 1000);
+
+        function handleChange() {
+            document.querySelector('.badge-primary').innerHTML = num;
+        }
+
+    </script>
+
+    <hr />
     <button class="btn btn-dark">load todos</button>
-    <hr/>
+    <hr />
 
     <ul id="todo-list"></ul>
 
