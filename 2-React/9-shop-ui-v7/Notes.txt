@@ -1,0 +1,27 @@
+
+
+steps while working redux 
+----------------------------
+
+step-1 : identify ui state
+        - products
+        - reviews
+        - cart
+step-2 : identify actions
+         -LOAD_PRODUCTS
+         -LOAD_REVIEWS
+         -SUBMIT_NEW_REVIEW
+         -BUY
+        ...
+step-3 : define action creators
+step-4 : define reducer(s) to process action(s)
+step-5 : combine all reducers into rootReducer
+step-6 : create store with rootReducer
+
+
+
+
+
+
+
+

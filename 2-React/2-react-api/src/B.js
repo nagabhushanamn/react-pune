@@ -13,6 +13,7 @@ class B extends Component {
                             data => data.value
                         }
                     </ValueContext.Consumer>
+
                     <C />
                 </div>
             </div>

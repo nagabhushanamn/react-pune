@@ -1,11 +1,12 @@
 
 
+--------------------------------
+- online-shopping-web-ui
 
-1. props & state
-2. component life-cycle
-
-    - mounting
-    - updating
-    - unmounting
-
-3. container components    
+        - render products
+        - render reviews
+        - submit new review
+        - buy
+        - view-cart
+        - checkout
+---------------------------------        
